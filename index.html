@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Counter App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "sub-container">
+                
+                <h1 class ="heading">Calorie Tracker</h1>
+                <h4 class = "description">Just enter the calories of every meal you ate and I'll show you the total</h4>
+                <form class="calories-box">
+                    <input id="calories" type="number" placeholder="Enter calories here" min="0"/>
+                        <div class = "buttons">
+                            <input id="calories-button" type="button" value="Add Meal" onclick="addMeals()"/>
+                            <input id="calculate-button" type="button" value="Calculate Total" onclick="calculateTotal()"/>
+                        </div>
+                </form>
+                <p id = "output"></p>
+                <button class="clear" onclick="clearOutput()">Clear</button>
+            </div>
+        </div> 
+    </body>
+    <script src = "index.js"></script>
+</html>
